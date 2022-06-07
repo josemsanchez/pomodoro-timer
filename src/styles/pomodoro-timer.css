@@ -1,0 +1,107 @@
+/* Peek-a-boo, I see you! :P */
+
+/*******************************************\
+|               INITIAL STYLES              |
+\*******************************************/
+
+html, body {
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  background: #353c4b;
+  box-sizing: border-box;
+  color: #FFF;
+  font-family: 'Dosis';
+}
+
+.pomodoro-container {
+  margin: 0 auto;
+  max-width: 992px;
+  width: 100%;
+}
+
+.box-shadow {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, .5);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: auto;
+}
+
+.header-container,
+.pomodoro-container {
+  flex: 1 0 auto;
+}
+
+/*******************************************\
+|               MEDIA QUERIES               |
+\*******************************************/
+@media screen and (max-width: 650px) {
+  .title {
+    line-height: 0.8;
+  }
+
+  .setters {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .break-setter,
+  .session-setter {
+    margin: auto !important;
+    margin-bottom: 20px !important;
+  }
+
+  .footer {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .timer {
+    height: 200px;
+    width: 200px;
+  }
+
+  .timer .timer-length {
+    font-size: 2.6em;
+  }
+
+  .timer .status {
+    margin: 15px auto;
+  }
+
+  .break-setter,
+  .session-setter {
+    font-size: 0.8em;
+    height: 100px;
+    margin-top: 30px;
+    width: 200px;
+  }
+
+  .break-setter {
+    margin-right: 50px;
+  }
+
+  .session-setter {
+    margin-left: 50px;
+  }
+
+  .reset .control-button {
+    margin-bottom: 20px;
+  }
+
+  .footer .social-list .fa {
+    display: inline-block;
+    font-size: 1em;
+    height: 25px;
+    line-height: 1.2;
+    margin: 2px;
+    width: 25px;
+  }
+}
