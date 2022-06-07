@@ -1,5 +1,5 @@
-##Pomodoro Timer
-Created with React
+## Pomodoro Timer
+Created with HTML, Normalize.CSS and React
 
 ## Available Scripts
 
